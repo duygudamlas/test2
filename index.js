@@ -73,13 +73,6 @@ ctx.font = '30px Impact'
 ctx.rotate(0)
 ctx.fillText('Canvas\nDeneme!', 30, 60)
 
-// Draw line under text
-var text = ctx.measureText('Canvas\nDeneme!')
-ctx.strokeStyle = 'rgba(0,0,0)'
-ctx.beginPath()    
-ctx.lineTo(50, 102)
-ctx.lineTo(50 + text.width, 102)
-ctx.stroke()
     
     loadImage('https://cdn.glitch.com/9eab4e9f-113d-4c01-8371-391c67fafde8%2Fprofil.png?1534529939353').then((image) => {
   ctx.drawImage(image, 50, 0, 70, 70)
